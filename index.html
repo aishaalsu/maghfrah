@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مغفرة | الرئيسية</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy-deep: #001A35;
+            --gold-matte: #A67C00;
+        }
+
+        body {
+            margin: 0;
+            background-image: url('yyyyyy.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .main-title {
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--navy-deep);
+            text-shadow: 2px 2px 0px rgba(166, 124, 0, 0.1);
+        }
+
+        .gold-divider {
+            height: 2px;
+            width: 200px;
+            background: linear-gradient(to right, transparent, var(--gold-matte), transparent);
+            margin: 2rem auto;
+        }
+
+        .nav-card {
+            border: 1px solid rgba(166, 124, 0, 0.2);
+            transition: 0.4s;
+            background: white;
+            border-radius: 2rem;
+        }
+
+        .nav-card:hover {
+            border-color: var(--gold-matte);
+            transform: translateY(-6px);
+            box-shadow: 0 25px 50px rgba(0, 26, 53, 0.08);
+        }
+
+        /* الفضائل */
+        .virtues-section {
+            margin-top: 6rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .virtues-title {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+        }
+
+        .virtues-title::after {
+            content: "";
+            display: block;
+            width: 120px;
+            height: 2px;
+            background: var(--gold-matte);
+            margin: 1rem auto 0;
+        }
+
+        .virtue-item {
+            font-family: 'Amiri', serif;
+            font-size: 1.5rem;
+            line-height: 2.7rem;
+            margin-bottom: 1.2rem;
+        }
+
+        /* الشعار */
+        .logo-bottom {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-bottom img {
+            width: 140px;
+            opacity: 0.9;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+        }
+
+        /* روابط الفوتر */
+        .footer-link {
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+
+        .footer-link:hover {
+            color: var(--gold-matte);
+        }
+
+        @media (max-width: 768px) {
+            .main-title { font-size: 4rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="text-center mb-20">
+    <h1 class="main-title mb-4">مَغفِــرَة</h1>
+    <div class="gold-divider"></div>
+    <p class="text-lg tracking-[0.4em] font-light uppercase opacity-70">
+        دليلك الشامل لصيغ الاستغفار من الكتاب والسنة .. نحو السكينة والطمأنينة 
+    </p>
+</header>
+
+<main class="flex flex-col items-center">
+
+    <nav class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-4xl">
+
+        <!-- القرآن -->
+        <a href="quran.html" class="nav-card p-14 text-center group">
+            <span class="text-2xl font-black block group-hover:text-[#A67C00] transition-colors">
+                القرآن الكريم
+            </span>
+            <span class="text-xs mt-4 block opacity-40 tracking-widest font-bold">
+                12 آية محكمة
+            </span>
+        </a>
+
+        <!-- السنة -->
+        <a href="sunnah.html" class="nav-card p-14 text-center group">
+            <span class="text-2xl font-black block group-hover:text-[#A67C00] transition-colors">
+                السنة النبوية
+            </span>
+            <span class="text-xs mt-4 block opacity-40 tracking-widest font-bold">
+                25 حديثاً صحيحاً
+            </span>
+        </a>
+
+    </nav>
+
+    <!-- الفضائل -->
+    <section class="virtues-section">
+
+        <h2 class="virtues-title">فضل الاستغفار</h2>
+
+        <p class="virtue-item">-
+            قال سماحة الشيخ ابن باز رحمه الله: "الاستغفار من أعظم الأسباب لتيسير الرزق وتكفير السيئات وطمأنينة القلوب".
+        </p>
+
+        <p class="virtue-item">-
+            المداومة على الاستغفار تجعل للعبد من كل هم فرجاً ومن كل ضيق مخرجاً.
+        </p>
+
+        <p class="virtue-item">-
+            الاستغفار هو دواء الذنوب، وهو مشروع في كل وقت، وخاصة في وقت السحر (قبل الفجر).
+        </p>
+
+        <p class="virtue-item">-
+            لا يزال العبد في أمان من عذاب الله ما دام يستغفر، لقوله تعالى: "وَمَا كَانَ اللَّهُ مُعَذِّبَهُمْ وَهُمْ يَسْتَغْفِرُونَ".
+        </p>
+
+        <div class="logo-bottom">
+            <img src="u.jpg">
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="mt-20 mb-12 opacity-30 text-xs font-bold tracking-[0.2em] text-center">    بالرجوع لموقع 
+    <a href="https://dorar.net" target="_blank" class="footer-link">الدرر السنية</a>
+    و
+    <a href="https://binbaz.org.sa" target="_blank" class="footer-link">ابن باز</a>
+</footer>
+
+</body>
+</html>
